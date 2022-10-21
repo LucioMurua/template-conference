@@ -1,0 +1,17 @@
+Nav con marca y navegacion de pagina
+
+Un hero con imagen grande con paralax y titulo con fecha y hora de conferencia + boton de ver horarios.
+
+about
+
+Fechas y horas de conferencias
+
+Lugar de las conferencias (hotel, edificio, salón con imagen grande sin parallax)
+
+footer con contacto: registro de contacto, tel, fax, redes sociales.
+
+https://es.wix.com/website-template/view/html/2141?originUrl=https%3A%2F%2Fes.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3Dconferencia&tpClick=view_button&esi=d2d9b9e6-4c54-4a48-a7c3-e586c5fd8061
+
+
+ver si puedo agregar un registro para que las personas se anoten con este tuto https://www.youtube.com/watch?v=hSe4Qr-xc84
+pero si no se puede guardar los datos agregados no lo agrego

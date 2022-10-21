@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --color-1:#C79F9F;
+    --color-2:#D03A3A;
+    --color-3:#572929;
+    --color-4:#473939;
+    --color-5:#201b1b;
+    --color-6:#cbc4c4;
+}
+
+html{
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    background-color: var(--color-4);
+    scroll-behavior: smooth;
+}
+
+/* =====section header===== */
+
+.nav{
+    position:fixed;
+    background-color: var(--color-5);
+    width: 100%;
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.nav__nav{
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    color: var(--color-1);
+}
+
+.nav__items{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    padding-top: 10px;
+    list-style: none;
+}
+
+.nav__item{
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--color-1);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.nav__item--home{
+    color: var(--color-2);
+    font-weight: 600;
+}
+
+/* ============== */
+
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__img{
+    width: 100%;
+    height: 95vh;
+    background-attachment: fixed;
+    background-image:linear-gradient(100deg, rgba(255, 0, 0, 0.200), rgba(255, 0, 0, 0.200)), url(../imgs/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.hero__title{
+    background-color: var(--color-2);
+    position: absolute;
+    bottom: 150px;
+    text-align: center;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    color: var(--color-6);
+    box-shadow: -20px 20px 15px #000;
+}
+
+.title{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    letter-spacing: 7px;
+}
+
+.hero__dates{
+    font-size: 1.2rem;
+}
+
+.hero__button{
+    background-color: var(--color-6);
+    text-decoration: none;
+    color: var(--color-2);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    position: relative;
+    transition: 0.2s;
+}
+
+.hero__button::after{
+    content: "";
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background:none;
+    z-index: 1;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.hero__button:hover{
+    background:none;
+    color: var(--color-6);
+}
+
+.hero__button:hover::after{
+    width: 100%;
+    right: 0;
+    border-radius: 10px;
+}
+
+.prueba{
+    background-color: var(--color-1);
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+/* ==========SECTION ABOUT======== */
+
+.about{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color-4);
+    color: var(--color-1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__logo{
+    align-self:baseline;
+}
+
+.main__logo{
+    width: 5rem;
+}
+
+.title__main{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 5rem;
+    padding-bottom: 20px;
+    color: var(--color-1);
+}
+
+.about__paragraph{
+    align-self: center;
+    font-size: 1.1rem;
+    padding: 20px;
+    max-width: 900px;
+    word-spacing: 5px;
+}
+
+.about__parallax{
+    width: 100%;
+    height: 40vh;
+    background-image: url(../imgs/pexels-johnmark-smith-301987.jpg);
+    background-position:center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    filter:sepia();
+}
+
+/* =========SECTION DATES======== */
+
+.dates{
+    color: var(--color-1);
+    background-color: var(--color-4);
+}
+
+.dates__container{
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.dates__calendar{
+    max-height: 50vh;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 2rem;
+}
+
+.dates__h3{
+    font-size: 6rem;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.dates__h3 span{
+    font-size: 3rem;
+}
+
+.dates__days{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+}
+
+.dates__hour{
+    font-size: 1rem;
+}
+
+/* ==========SECTION PLACE========== */
+
+.place{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.place__background{
+    background-image: linear-gradient(100deg, rgba(255, 0, 0, 0.200), rgba(255, 0, 0, 0.200)),url(../imgs/pexels-helena-lopes-705792.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.place__texts{
+    background-color: var(--color-2);
+    position:absolute;
+    height: 500px;
+    width: 600px;
+    border-radius: 5px;
+    color: var(--color-6);
+    box-shadow: -20px 20px 15px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.place__img{
+    width: 5rem;
+}
+
+.place__title{
+    padding: 0;
+    color: var(--color-6);
+}
+
+.place__paragraph{
+    width: 80%;
+    margin: 0 auto;
+    color: var(--color-6);
+}
+
+.place__button{
+    background-color: var(--color-6);
+    text-decoration: none;
+    color: var(--color-2);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    position: relative;
+    transition: 0.2s;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.place__button::after{
+    content: "";
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background:none;
+    z-index: 1;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.place__button:hover{
+    background:none;
+    color: var(--color-6);
+}
+
+.place__button:hover::after{
+    width: 100%;
+    right: 0;
+    border-radius: 10px;
+}
+
+/* =====SECTION CONTACT===== */
+
+.contact{
+    width: 100%;
+    height: 75vh;
+    margin-top: 150px;
+    position: relative;
+}
+
+.contact__content{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.contact__title{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.contact__elements{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.contact__form{
+    gap: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form__item{
+    color:var(--color-1);
+    background-color: var(--color-5);
+    border: none;
+    border-bottom: 1px solid var(--color-6);
+    padding: 10px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2rem;
+}
+
+.form__message{
+    height: 150px;
+}
+
+.form__submit{
+    background-color: var(--color-2);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--color-6);
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    border: none;
+}
+
+.contact__subtitle{
+    padding-bottom: 20px;
+    color: var(--color-1);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5rem;
+}
+
+.contact__item{
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    color: var(--color-1);
+    right: 50%;
+    transform: translateX(50%);
+}
