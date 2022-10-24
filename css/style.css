@@ -208,20 +208,20 @@ html{
 .dates__container{
     margin: 0 auto;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 70%;
 }
 
 .dates__calendar{
     max-height: 50vh;
     padding-top: 60px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,1fr);
+    justify-content:space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     gap: 2rem;
 }
 
@@ -241,6 +241,7 @@ html{
 
 .dates__hour{
     font-size: 1rem;
+    padding: 10px 0;
 }
 
 /* ==========SECTION PLACE========== */
@@ -392,6 +393,14 @@ html{
     height: 40px;
     margin: auto;
     border: none;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.form__submit:active{
+    transform: translateY(5px);
+    background-color: var(--color-6);
+    color: var(--color-2);
 }
 
 .contact__subtitle{
@@ -408,7 +417,7 @@ html{
 
 .copyright{
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     margin: 0 auto;
     color: var(--color-1);
     right: 50%;
