@@ -1,4 +1,10 @@
-var rellax = new Rellax ('.rellax');
+const mediumBp = matchMedia('(max-with: 650px)');
+const changeSize = mql=>{
+    mql.matches ? document.style.
+}
+
+mediumBp.addEventListener(changeSize);
+changeSize(mediumBp);
 
 const form = document.getElementById('form');
 const nameForm = document.getElementById('name');

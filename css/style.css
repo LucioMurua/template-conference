@@ -79,7 +79,7 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(3px);
-    z-index: -1;
+    z-index: -3;
 }
 
 .hero__title{
@@ -155,7 +155,8 @@ html{
 
 .about{
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
+    height: fit-content;
     background-color: var(--color-4);
     color: var(--color-1);
     text-align: center;
@@ -203,10 +204,13 @@ html{
 .dates{
     color: var(--color-1);
     background-color: var(--color-4);
+    position: relative;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .dates__container{
-    margin: 0 auto;
+    margin: 150px auto 20px;
     text-align: center;
     min-height: 100vh;
     height: fit-content;
@@ -217,11 +221,10 @@ html{
 }
 
 .dates__calendar{
-    max-height: 50vh;
     padding-top: 60px;
     display: grid;
     justify-content:space-evenly;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 2rem;
 }
 
@@ -247,6 +250,8 @@ html{
 /* ==========SECTION PLACE========== */
 
 .place{
+    background-color: ;
+    width: 100%;
     height: 100vh;
     text-align: center;
     position: relative;
@@ -268,8 +273,11 @@ html{
     background-color: var(--color-2);
     position:absolute;
     height: 500px;
-    width: 600px;
+    width: fit-content;
+    min-width: 360px;
     border-radius: 5px;
+    max-width: 600px;
+    margin: 0 10px;
     color: var(--color-6);
     box-shadow: -20px 20px 15px #000;
     display: flex;
@@ -287,7 +295,7 @@ html{
 }
 
 .place__paragraph{
-    width: 80%;
+    padding: 50px;
     margin: 0 auto;
     color: var(--color-6);
 }
@@ -334,7 +342,8 @@ html{
 
 .contact{
     width: 100%;
-    height: 75vh;
+    min-height: 75vh;
+    height: fit-content;
     margin-top: 150px;
     position: relative;
 }
@@ -356,10 +365,11 @@ html{
 
 .contact__elements{
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    max-width: 800px;
-    margin: 0 auto;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    max-width: 100%;
     gap: 30px;
+    margin-bottom: 100px;
 }
 
 .contact__form{
@@ -404,12 +414,12 @@ html{
     color: var(--color-2);
 }
 
-.warning{
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: var(--color-2);
-    padding-top: 20px;
+.contact__address{
+    margin: 0 auto;
+}
+
+.contact__social{
+    margin: 0 auto;
 }
 
 .contact__subtitle{
@@ -427,8 +437,23 @@ html{
 .copyright{
     position: absolute;
     bottom: 30px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     color: var(--color-1);
     right: 50%;
     transform: translateX(50%);
+    width: 100%;
+    text-align: center;
+}
+
+/* =====MEDIA SCREEN==== */
+
+@media (max-width: 650px){
+    .nav{
+        padding-top: 0;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .rellax:disabled{
+    }
 }
