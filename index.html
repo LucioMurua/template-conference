@@ -106,13 +106,13 @@
         <div class="contact__content">
             <h2 class="contact__title title__main"><span class="place__logo"><img class="place__img" src="./imgs/contact.svg" alt=""></span>CONTACT</h2>
             <div class="contact__elements">
-                <div class="contact__form">
-                    <input type="text" class="form__name form__item" value="Name">
-                    <input type="email" class="form__email form__item" value="Email">
-                    <input type="phone" class="form_phone form__item" value="Phone">
-                    <textarea name="message" id="message" class="form__message form__item" cols="30" rows="10">Type your message here...</textarea>
-                    <input type="submit" class="form__submit" value="SUBMIT">
-                </div>
+                <form class="contact__form" action="https://formspree.io/f/xqkjypaq" method="POST" id="form">
+                    <input type="text" name="name" class="form__name form__item" id="name" placeholder="Name">
+                    <input type="email" name="email" class="form__email form__item" id="email" placeholder="Email">
+                    <input type="phone" name="phone" class="form_phone form__item" id="phone" placeholder="Phone">
+                    <textarea class="form__message form__item" name="message" id="message" placeholder="Type your message here..."></textarea>
+                    <input type="submit" class="form__submit" id="submit" value="SUBMIT">
+                </form>
                 <div class="contact__address">
                     <h3 class="contact__subtitle">FULL ADDRESS</h3>
                     <p class="contact__item">1000 James Cray Street<br>Colorado, CA 65589<br>info@mysite.com</p>

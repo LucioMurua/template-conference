@@ -381,6 +381,7 @@ html{
 
 .form__message{
     height: 150px;
+    resize:none;
 }
 
 .form__submit{
@@ -401,6 +402,14 @@ html{
     transform: translateY(5px);
     background-color: var(--color-6);
     color: var(--color-2);
+}
+
+.warning{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: var(--color-2);
+    padding-top: 20px;
 }
 
 .contact__subtitle{
