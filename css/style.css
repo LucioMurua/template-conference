@@ -79,6 +79,7 @@ html{
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .hero__img{
@@ -221,7 +222,7 @@ html{
 }
 
 .dates__container{
-    margin: 150px auto 20px;
+    margin: 0px auto 20px;
     text-align: center;
     min-height: 100vh;
     height: fit-content;
@@ -285,7 +286,7 @@ html{
     position:absolute;
     height: 500px;
     width: fit-content;
-    min-width: 360px;
+    min-width: 300px;
     border-radius: 5px;
     max-width: 600px;
     margin: 0 10px;
@@ -306,7 +307,7 @@ html{
 }
 
 .place__paragraph{
-    padding: 50px;
+    padding: 0 50px;
     margin: 0 auto;
     color: var(--color-6);
 }
@@ -515,5 +516,39 @@ html{
     .nav__item:focus{
         background-color: var(--color-2);
     }
+
+    .hero__img{
+        height: 120vh;
+    }
+
     
+
+    .hero__title{
+        min-width: 300px;
+        width: fit-content;
+        margin: 0 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .title{
+        font-size: 3rem;
+        letter-spacing: 0px;
+    }
+
+    .hero__dates{
+        font-size: 1rem;
+    }
+
+    .about{
+        height: 100vh;
+    }
+
+    .about__parallax{
+        height: 90vh;
+    }
+
+    .dates__container{
+        margin: 50px auto;
+    }
 }

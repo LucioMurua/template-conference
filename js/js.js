@@ -1,17 +1,22 @@
-var rellax = new Rellax ('.rellax')
+// var rellax = 
 
 const heroImg = document.getElementById('heroImg')
 const heroTitle = document.getElementById('heroTitle')
+const rellaxJs = document.getElementById('scriptRellax')
 
 const mql = matchMedia ('(max-width: 650px)')
 
 const applyMatchMedia = mql =>{
     mql.matches ?  (
         heroTitle.setAttribute("data-rellax-speed","0"),
-        heroImg.setAttribute("data-rellax-speed","0")
+        heroImg.setAttribute("data-rellax-speed","0"),
+        rellaxJs.setAttribute("src",""),
+        rellax = "0"
     ) : (
         heroTitle.setAttribute("data-rellax-speed","-3"),
-        heroImg.setAttribute("data-rellax-speed","-10")
+        heroImg.setAttribute("data-rellax-speed","-10"),
+        rellaxJs.setAttribute("src","./js/rellax.js"),
+        rellax = new Rellax ('.rellax')
     );
 }
 
