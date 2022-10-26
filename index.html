@@ -15,18 +15,21 @@
                 <div class="logo">
                     <h2>LOGO-HERE</h2>
                 </div>
-                <ul class="nav__items">
-                    <li><a class="nav__item nav__item--home" href="#home">HOME</a></li>
-                    <li><a class="nav__item" href="#about">ABOUT</a></li>
-                    <li><a class="nav__item" href="#dates">DATES</a></li>
-                    <li><a class="nav__item" href="#place">PLACE</a></li>
-                    <li><a class="nav__item" href="#contact">CONTACT</a></li>
-                </ul>
+                <div class="menu" id="menu">
+                    <img src="./imgs/menu.svg" id="navLogo" class="nav__logo" alt="menu logo">
+                    <ul class="nav__items">
+                        <li><a class="nav__item nav__item--home" href="#home">HOME</a></li>
+                        <li><a class="nav__item" href="#about">ABOUT</a></li>
+                        <li><a class="nav__item" href="#dates">DATES</a></li>
+                        <li><a class="nav__item" href="#place">PLACE</a></li>
+                        <li><a class="nav__item" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="hero" id="home">
-            <div class="hero__img rellax" data-rellax-speed="-10"></div>
-            <div class="hero__title rellax" data-rellax-speed="-3">
+            <div class="hero__img rellax" id="heroImg" data-rellax-speed="-10"></div>
+            <div class="hero__title rellax" id="heroTitle" data-rellax-speed="-3">
                 <h1 class="title">ANNUAL CONFERENCE WEEK</h1>
                 <p class="hero__dates">From march 25 to march 30, 2023.</p>
                 <div>
@@ -131,7 +134,7 @@
     </footer>
 
 
-    <script src="./js/rellax.js"></script>
+    <script id="scriptRellax" src="./js/rellax.js"></script>
     <script src="./js/js.js"></script>
 </body>
 </html>
