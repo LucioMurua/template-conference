@@ -449,7 +449,6 @@ html{
 .copyright{
     position: absolute;
     bottom: 30px;
-    /* margin: 0 auto; */
     color: var(--color-1);
     right: 50%;
     transform: translateX(50%);
@@ -520,8 +519,6 @@ html{
     .hero__img{
         height: 120vh;
     }
-
-    
 
     .hero__title{
         min-width: 300px;

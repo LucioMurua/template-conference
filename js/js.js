@@ -1,5 +1,3 @@
-// var rellax = 
-
 const heroImg = document.getElementById('heroImg')
 const heroTitle = document.getElementById('heroTitle')
 const rellaxJs = document.getElementById('scriptRellax')
@@ -22,7 +20,6 @@ const applyMatchMedia = mql =>{
 
 addEventListener('resize', ()=> applyMatchMedia(mql))
 addEventListener('DOMContentLoaded', ()=> applyMatchMedia(mql))
-
 
 const form = document.getElementById('form');
 const nameForm = document.getElementById('name');
@@ -66,5 +63,4 @@ const navLogo = document.getElementById('navLogo')
 menu.addEventListener('click', ()=>{
     menu.classList.toggle('menu--show')
     navLogo.classList.toggle('nav__logo--show')
-    console.log("hola")
 })
